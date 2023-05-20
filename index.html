@@ -10,8 +10,11 @@
      
       var authCode = queryString.split('&')[2].split('=')[1];
       
-      document.getElementById('Textbox').value = queryString;
+      document.getElementById('Textbox').value = authCode;
     
+    console.log(Url);
+    console.log(queryString);
+    console.log(authCode);
     }
     window.onload = function(){
     PrintData();    
