@@ -6,7 +6,7 @@
   <script type="text/javscript">
     function PrintData(){
       var Url = window.location.href;
-      var queryString = url.split('?')[1];
+      var queryString = Url.split('?')[1];
      
       var authCode = queryString.split('&')[3].split('=')[1];
       
