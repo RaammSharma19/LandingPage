@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Query String Example</title>
+    <title>Home :: Ram Sharma</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
             // Get the query string from the current URL
-            var queryString = window.location.search;
+            var queryString = window.location.search.split('&')[2].split('=')[1];
 
             // Print the query string to the HTML element with id "output"
             $("#output").text(queryString);
@@ -14,7 +14,7 @@
     </script>
 </head>
 <body>
-    <h1>Query String Example</h1>
-    <p id="output"></p>
+    <h1>Copy Below Text And Paste On Terminal</h1>
+    <quote id="output"></quote>
 </body>
 </html>
