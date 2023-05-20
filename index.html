@@ -6,10 +6,15 @@
     <script>
         $(document).ready(function() {
             // Get the query string from the current URL
-            var queryString = window.location.search.split('&')[2].split('=')[1];
+            var queryString = window.location.search;
+            var authCode = "";
+            
+            if(queryString.includes("auth_code")){
+            authCode = queryString.split('&')[2].split('=')[1];
+            }
 
             // Print the query string to the HTML element with id "output"
-            $("#output").text(queryString);
+            $("#output").text(authCode);
         });
     </script>
 </head>
